@@ -2,6 +2,21 @@
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+
 .bg-auth{
   padding: 40px 0;
   background-color: rgb(208, 208, 218);
@@ -36,9 +51,9 @@
   height: 100%;
 }
 
-.home-img{
-  width: 34rem;
-  height: 34rem;
+.home-img {
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -335,5 +350,9 @@
 
 #blogcon{
   width: 50rem;
+}
+
+.btnn {
+  margin: 0 5px; /* Adjust the value to your preference for the horizontal spacing */
 }
 

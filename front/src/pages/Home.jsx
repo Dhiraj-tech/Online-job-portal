@@ -30,7 +30,7 @@ export const Home = () => {
         </div>
       </section>
       <div className="col-12" id="latestjob">
-        <main className="row">
+        <main className="row mt-4">
           <JobList title="Latest Job Vacancies" uri="job/latest" />
         </main>
       </div>

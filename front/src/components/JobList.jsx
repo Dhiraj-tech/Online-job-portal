@@ -20,18 +20,42 @@ export const JobList = ({ uri, title }) => {
 
   const indexOfLastJob = currentPage * jobsPerPage;
   const indexOfFirstJob = indexOfLastJob - jobsPerPage;
-  const currentJobs = jobs.slice(
-    indexOfFirstJob,
-    indexOfLastJob
-  );
+  const currentJobs = jobs.slice(indexOfFirstJob, indexOfLastJob);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
- 
-    const handleButtonClick = (index) => {
-      setActiveButton(index);
-      paginate(index);
-    };
 
+  const handleButtonClick = (index) => {
+    setActiveButton(index);
+    paginate(index);
+  };
+
+  const totalPages = Math.ceil(jobs.length / jobsPerPage);
+
+  // If there's only one page, render the latest job without pagination
+  if (totalPages === 1) {
+    return (
+      <div className="col-12">
+        <div className="row">
+          <div className="col-12 py-3">
+            <div className="row">
+              <div className="col-12 text-center text-uppercase">
+                <h2>{title}</h2>
+              </div>
+            </div>
+            <div>
+              {loading ? (
+                <Loading />
+              ) : (
+                currentJobs.map((job) => <JobCard key={job._id} job={job} />)
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // If there are multiple pages, render the pagination
   return (
     <div className="col-12">
       <div className="row">
@@ -45,16 +69,19 @@ export const JobList = ({ uri, title }) => {
             {loading ? (
               <Loading />
             ) : (
-              currentJobs
-                .map((job) => <JobCard key={job._id} job={job} />)
+              currentJobs.map((job) => <JobCard key={job._id} job={job} />)
             )}
           </div>
           <div className="pagination d-flex justify-content-center mt-3">
             {Array.from({
-              length: Math.ceil(jobs.length / jobsPerPage),
+              length: totalPages,
             }).map((_, index) => (
               <button
-              className={`btn ${activeButton === index + 1 ? 'btn-dark' : 'btn-outline-dark'} btnn`}
+                className={`btn ${
+                  activeButton === index + 1
+                    ? "btn-dark"
+                    : "btn-outline-dark"
+                } btnn`}
                 type="button"
                 key={index}
                 onClick={() => handleButtonClick(index + 1)}

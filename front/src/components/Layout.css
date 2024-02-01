@@ -56,11 +56,6 @@ body{
   height: auto;
 }
 
-
-.about-img {
-  width: 54.2rem;
-}
-
 .contact-section {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -98,8 +93,6 @@ body{
 }
 
 
-
-
 .card {
     width: 70rem;
     border-radius: 10px;
@@ -135,13 +128,15 @@ body{
 
 #col-img{
     margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: -15px;
     width: 50rem;
 }
 
 #job-overview{
     width: 20rem;
-    margin-top: -80.6rem;
+    margin-top: -53.9rem;
+    margin-bottom: 2rem;
     margin-left: 50rem;
 }
 
@@ -356,3 +351,54 @@ body{
   margin: 0 5px; /* Adjust the value to your preference for the horizontal spacing */
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 767px) {
+  body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card {
+    width: 100%; /* Adjust as needed for smaller screens */
+  }
+
+  #job-overview {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #job-container {
+    margin-top: 0;
+  }
+
+  .bg-auth {
+    padding: 20px 0;
+  }
+
+  #items-to-up {
+    margin-top: 0;
+  }
+
+  #searchcontain {
+    width: 100%;
+    height: 100%;
+  }
+
+  #searchinput {
+    width: 100%;
+  }
+
+  #blogcon {
+    width: 100%;
+  }
+
+  #applycontent {
+    width: 100%;
+  }
+}

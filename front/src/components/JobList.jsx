@@ -31,31 +31,6 @@ export const JobList = ({ uri, title }) => {
 
   const totalPages = Math.ceil(jobs.length / jobsPerPage);
 
-  // If there's only one page, render the latest job without pagination
-  if (totalPages === 1) {
-    return (
-      <div className="col-12">
-        <div className="row">
-          <div className="col-12 py-3">
-            <div className="row">
-              <div className="col-12 text-center text-uppercase">
-                <h2>{title}</h2>
-              </div>
-            </div>
-            <div>
-              {loading ? (
-                <Loading />
-              ) : (
-                currentJobs.map((job) => <JobCard key={job._id} job={job} />)
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // If there are multiple pages, render the pagination
   return (
     <div className="col-12">
       <div className="row">

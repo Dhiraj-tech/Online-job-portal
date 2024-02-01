@@ -33,7 +33,7 @@ export const Home = () => {
       <div className="container mt-4" id="latestjob">
         <main className="row">
           <div className="col-12">
-            <JobList title="Latest Job Vacancies" uri="https://online-job-portal-eq0e.onrender.com/job/latest" />
+            <JobList title="Latest Job Vacancies" uri="https://online-job-portal-cwo9.onrender.com/job/latest" />
           </div>
         </main>
       </div>

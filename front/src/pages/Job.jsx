@@ -27,7 +27,7 @@ export const Job = () => {
   useEffect(() => {
     if (Object.keys(job).length) {
       http
-        .get(`https://online-job-portal-eq0e.onrender.com/category/${job.category_id}/jobs`)
+        .get(`https://online-job-portal-cwo9.onrender.com/category/${job.category_id}/jobs`)
         .then(({ data }) => {
           let list = data.filter((pro) => pro._id !== job._id);
           setSimilars(list);
@@ -40,7 +40,7 @@ export const Job = () => {
     setLoadingPage(true);
 
     http
-      .get(`https://online-job-portal-eq0e.onrender.com/job/${params.id}`)
+      .get(`https://online-job-portal-cwo9.onrender.com/job/${params.id}`)
       .then(({ data }) => {
         setJob(data);
         setImg(data.images[0].replace(/\\/g, "/"));

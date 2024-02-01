@@ -66,9 +66,9 @@ export const Category = () => {
         setLoading(true)
 
         try{
-            let catResp = await http.get(`https://online-job-portal-eq0e.onrender.com/category/${params.id}`)
+            let catResp = await http.get(`https://online-job-portal-cwo9.onrender.com/category/${params.id}`)
             setCategory(catResp.data)
-            let proResp = await http.get(`https://online-job-portal-eq0e.onrender.com/category/${params.id}/jobs`)
+            let proResp = await http.get(`https://online-job-portal-cwo9.onrender.com/category/${params.id}/jobs`)
             setJobs(proResp.data)
             setCurrentPage(1)
         }catch(e){} finally{

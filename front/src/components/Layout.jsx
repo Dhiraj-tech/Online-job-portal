@@ -23,7 +23,7 @@ export const Layout = () => {
             const token = fromStorage('user_token')
 
             if(!isEmpty(token)) {
-                http.get('profile/details')
+                http.get('https://online-job-portal-eq0e.onrender.com/profile/details')
                     .then(({data}) => {
                         dispatch(setUser(data))
                     })
@@ -43,7 +43,7 @@ export const Layout = () => {
     }
 
     useEffect(() => {
-        http.get('category')
+        http.get('https://online-job-portal-eq0e.onrender.com/category')
             .then(({data}) => setCategories(data))
             .catch((err) => {console.error(err)})
     

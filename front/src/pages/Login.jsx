@@ -21,7 +21,7 @@ export const Login = () => {
         setLoading(true)
 
 
-        http.post('login', form)
+        http.post('https://online-job-portal-eq0e.onrender.com/login', form)
             .then(({data}) => {
                 if(['Customer'].includes(data.user.type)){
                     intoStorage('user_token', data.token, remember)

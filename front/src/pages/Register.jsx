@@ -15,7 +15,7 @@ export const Register = () => {
         ev.preventDefault()
         setLoading(true)
 
-        http.post('https://online-job-portal-0ksn.onrender.com/register', form)
+        http.post('/register', form)
             .then(() => navigate('/login'))
             .catch(() => {})
             .finally(() => setLoading(false))

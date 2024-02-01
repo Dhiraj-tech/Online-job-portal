@@ -19,8 +19,7 @@ export const dtFormat = (datetime, format = 'lll') =>
     moment(datetime).format(format)
 
 export const imgUrl = imagePath =>
-    // `${import.meta.env.VITE_API_URL}/${imagePath}`
-    `https://online-job-portal-0ksn.onrender.com/${imagePath}`
+    `${import.meta.env.VITE_API_URL}/${imagePath}`
 
 export const isEmpty = data => 
     ['', null, undefined].includes(data)

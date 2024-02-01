@@ -18,7 +18,7 @@ export const ChangePassword = () => {
         ev.preventDefault()
         setLoading(true)
 
-        http.patch('https://online-job-portal-0ksn.onrender.com/profile/change-password', form)
+        http.patch('/profile/change-password', form)
             .then(() => {
                 dispatch(clearUser())
                 clearStorage('cms_token')

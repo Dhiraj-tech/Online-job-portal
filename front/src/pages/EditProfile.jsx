@@ -29,7 +29,7 @@ export const EditProfile = () => {
         ev.preventDefault()
         setLoading(true)
 
-        http.patch('https://online-job-portal-0ksn.onrender.com/profile/edit-profile', form)
+        http.patch('/profile/edit-profile', form)
             .then(() => http.get('profile/details'))
             .then(({data}) =>{
                 dispatch(setUser(data))

@@ -63,7 +63,7 @@ export const Search = () => {
         setLoading(true)
 
         try{
-            let proResp = await http.get(`https://online-job-portal-0ksn.onrender.com/job/search`,{
+            let proResp = await http.get(`/job/search`,{
                 params: {
                     term: query.get('term'),
                 }

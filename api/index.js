@@ -11,7 +11,7 @@ const app = express()
 
 // app.use(cors())
 app.use(cors({
-    origin: 'https://online-job-portal-u211.onrender.com', // Replace with your frontend URL
+    origin: 'http://localhost:4001', // Replace with your frontend URL
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
 }));

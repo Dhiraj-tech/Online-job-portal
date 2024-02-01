@@ -9,7 +9,12 @@ config()
 
 const app = express()
 
-app.use(cors())
+// app.use(cors())
+app.use(cors({
+    origin: 'https://online-job-portal-u211.onrender.com', // Replace with your frontend URL
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+}));
 
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended: true}))

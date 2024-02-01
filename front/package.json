@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy":"https://online-job-portal-u211.onrender.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

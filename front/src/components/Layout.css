@@ -401,4 +401,14 @@ body{
   #applycontent {
     width: 100%;
   }
+
+  #col-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+}
+
 }

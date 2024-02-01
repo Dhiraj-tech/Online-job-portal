@@ -23,7 +23,7 @@ export const JobCard = ({ job }) => {
               <div className="flex-shrink-0">
                 <i className="mdi mdi-map-marker text-primary me-1"></i>
               </div>
-              <p className="text-muted mb-0">
+              <p className="text-muted mt-2 mb-0">
                 <i className="fa-solid fa-location-dot mt-4 me-2"></i>
                 {job.location}
               </p>
@@ -31,7 +31,7 @@ export const JobCard = ({ job }) => {
           </div>
           <div className="col-md-7 mb-3 mb-md-0" id="job-tiless">
             <div className="d-flex">
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 mt-4">
                 <i className="fas fa-clock mt-4 me-2"></i>
                 {moment(job.createdAt).fromNow()}
               </div>

@@ -20,7 +20,7 @@ export const dtFormat = (datetime, format = 'lll') =>
 
 export const imgUrl = imagePath =>
     // `${import.meta.env.VITE_API_URL}/${imagePath}`
-    `https://online-job-portal-cwo9.onrender.com/${imagePath}`
+    `https://online-job-portal-0ksn.onrender.com/${imagePath}`
 
 export const isEmpty = data => 
     ['', null, undefined].includes(data)

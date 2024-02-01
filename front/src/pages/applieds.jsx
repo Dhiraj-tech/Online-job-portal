@@ -37,7 +37,7 @@ export const Applieds = () => {
         headers: { "Content-Type": "multipart/form-data" },
       })
       .then(() => {
-        navigate(`https://online-job-portal-cwo9.onrender.com/jobs/${id}`);
+        navigate(`https://online-job-portal-0ksn.onrender.com/jobs/${id}`);
       })
       .catch((err) =>{})
       .finally(() => setLoading(false));

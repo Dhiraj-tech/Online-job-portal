@@ -391,7 +391,7 @@ body{
   }
 
   #searchinput {
-    width: 100%;
+    width:fit-content;
   }
 
   #blogcon {

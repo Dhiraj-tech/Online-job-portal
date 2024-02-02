@@ -78,7 +78,7 @@ export const List = () => {
            </Row>
        </Col>
        
-        <Col xs="3" className="mt-3">
+        <Col xs="12" md="3" className="mt-3">
           <Card>
             <Card.Header>Total Customers<i className="fa-solid fa-user-friends ms-2"></i></Card.Header>
             <Card.Body>
@@ -87,7 +87,7 @@ export const List = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs="3" className="mt-3">
+        <Col xs="12" md="3" className="mt-3">
           <Card>
             <Card.Header>Total Categories<i className="fa-solid fa-user-friends ms-2"></i></Card.Header>
             <Card.Body>
@@ -96,7 +96,7 @@ export const List = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs="3" className="mt-3">
+        <Col xs="12" md="3" className="mt-3">
           <Card>
             <Card.Header>Total Companies<i className="fa-solid fa-user-friends ms-2"></i></Card.Header>
             <Card.Body>
@@ -105,7 +105,7 @@ export const List = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs="3" className="mt-3">
+        <Col xs="12" md="3" className="mt-3">
           <Card>
             <Card.Header>Total JobLists<i className="fa-solid fa-user-friends ms-2"></i></Card.Header>
             <Card.Body>
@@ -114,7 +114,7 @@ export const List = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs="3" className="mt-3">
+        <Col xs="12" md="3" className="mt-3">
           <Card>
             <Card.Header>Total Contacts<i className="fa-solid fa-user-friends ms-2"></i></Card.Header>
             <Card.Body>
@@ -123,7 +123,7 @@ export const List = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs="3" className="mt-3">
+        <Col xs="12" md="3" className="mt-3">
           <Card>
             <Card.Header>Total blogs<i className="fa-solid fa-user-friends ms-2"></i></Card.Header>
             <Card.Body>
@@ -132,7 +132,7 @@ export const List = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs="3" className="mt-3">
+        <Col xs="12" md="3" className="mt-3">
           <Card>
             <Card.Header>Total AppliedJobs<i className="fa-solid fa-user-friends ms-2"></i></Card.Header>
             <Card.Body>
